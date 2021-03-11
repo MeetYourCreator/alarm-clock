@@ -7,7 +7,8 @@ const Clock = () => {
     <>
       <div className='clock-container'>
         <div className='clock'>
-        <div className='clock-face'></div>
+          <div className='clock-face'>
+          </div>
         </div>
       </div>
   </>
