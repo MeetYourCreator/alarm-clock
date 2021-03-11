@@ -1,0 +1,13 @@
+.home-container {
+background-color: blue;
+width: 100vw;
+height: 300px;
+display: flex;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}

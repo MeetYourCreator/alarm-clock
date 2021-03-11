@@ -1,5 +1,5 @@
 import React from 'react'
-import './App.css';
+import './App.css'
 import Home from './screens/Home/Home.jsx'
 import Clock from './screens/Clock/Clock.jsx'
 
