@@ -7,6 +7,7 @@ body {
   justify-content: center;
   min-height: 100vh;
   align-items: center;
+  font-family: 'Wallpoet', cursive;
 }
 
 .clock-container {
@@ -26,7 +27,6 @@ body {
   border: 3px solid black;
   position: skewY(40deg);
   transform: skewX(50deg);
-  
 }
 
 .clock .number {
@@ -73,19 +73,17 @@ body {
   background-color:rgb(123, 149, 5);
   border: 2px solid black;
   z-index: 11;
-  width: 15px;
-  height: 15px;
-  top: 39%;
+  width: 20px;
+  height: 20px;
+  top: 39.5%;
   left: 50%;
-  transform: translate(-50%, 50%);
-  position: skewY(40deg);
-  transform: skewX(50deg);
-  
+  transform: skew(40deg, 20deg);
+  border-radius: 10px;
 }
 
 .clock .hand.second {
   width: 3px;
-  height: 4 5%;
+  height: 45%;
   background-color: red;
 }
 
