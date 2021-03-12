@@ -21,6 +21,16 @@ body {
   align-items: center;
 
 }
+
+.clock-container {
+background-color:rgba(255, 0, 85, 0.485);
+border-top-right-radius: 250px;
+border-bottom-right-radius: 250px;
+border-top-left-radius: 40px;
+border-bottom-left-radius: 50px;
+height: 700px;
+
+}
 .clock-face {
   width: 500px;
   height: 500px;
@@ -31,6 +41,8 @@ body {
 }
 
 .clock .number {
+  font-size: 40px;
+  color:rgb(123, 149, 5);
   --rotation: 0;
   position: absolute;
   width: 100%;
@@ -69,13 +81,14 @@ body {
 .clock::after {
   content: '';
   position: absolute;
-  background-color: black;
+  background-color:rgb(123, 149, 5);
+  border: 2px solid black;
   z-index: 11;
   width: 15px;
   height: 15px;
-  top: 50%;
+  top: 37%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 50%);
 }
 .clock .hand.second {
   width: 3px;
