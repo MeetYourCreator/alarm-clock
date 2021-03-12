@@ -6,7 +6,7 @@ import Clock from './screens/Clock/Clock.jsx'
 const App = () => {
   return (
     <>
-      <Home />
+      {/* <Home /> */}
       <Clock />
    </>
   );
