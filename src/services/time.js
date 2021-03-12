@@ -1,13 +1,10 @@
-export const showLocalTime = () => {
-  let time = new Date();
-  let hour = time.getHours();
-  let minute = time.getMinutes();
-  let second = time.getSeconds();
+const hourHand = document.querySelector('[data-hour-hand]')
+const minuteHand = document.querySelector('[data-minute-hand]')
+const secondHand = document.querySelector('[data-second-hand]')
 
-  hour = hour < 10 ? '0' + hour : hour;
-  minute = minute < 10 ? '0' + minute : minute;
-  second = second < 10 ? '0' + second : second;
-
-  return hour + ':' + minute + ':' + second
-
+export const setTime = () => {
+  const currentDate = new Date();
+  const secondsRatio = currentDate.getSeconds() / 60;
+  const minutesRatio = (secondsRatio + currentDate.getMinutes()) / 60;
+  const hoursRatio = (minutesRatio + currentDate.getHours()) / 12;
 }
