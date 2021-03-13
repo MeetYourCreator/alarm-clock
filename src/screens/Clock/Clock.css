@@ -10,25 +10,6 @@ body {
   font-family: 'Wallpoet', cursive;
 }
 
-.clock-container {
-  background-color:rgba(255, 0, 85, 0.485);
-  border-top-right-radius: 250px;
-  border-bottom-right-radius: 250px;
-  border-top-left-radius: 40px;
-  border-bottom-left-radius: 50px;
-  height: 700px;
-}
-
-.clock-face {
-  width: 500px;
-  height: 500px;
-  background-color: rgba(102, 193, 230, 0.485);
-  border-radius: 50%;
-  border: 3px solid black;
-  position: skewY(40deg);
-  transform: skewX(50deg);
-}
-
 .clock .number {
   font-size: 40px;
   color:rgb(123, 149, 5);
