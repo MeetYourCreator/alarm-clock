@@ -4,21 +4,23 @@ import HourHand from '../../components/HourHand'
 import MinuteHand from "../../components/MinuteHand"
 import SecondHand from "../../components/SecondHand"
 
+import setSeconds from "../../services/time.js"
+
 import { ClockContainer } from "../../Styled/ClockContainer.js"
 import { ClockFace } from '../../Styled/ClockFace.js'
+
 
 
 const Clock = () => {
 
   return (
     <>
-        <ClockContainer>
-          <div className="clock">
-            <ClockFace>
-              <HourHand />
-              <MinuteHand />
-              <SecondHand />
-            
+      <ClockContainer>
+        <div className="clock">
+          <ClockFace>
+            <HourHand />
+            <MinuteHand />
+            <SecondHand />
               <div className="number number1">1</div>
               <div className="number number2">2</div>
               <div className="number number3">3</div>
@@ -31,9 +33,9 @@ const Clock = () => {
               <div className="number number10">10</div>
               <div className="number number11">11</div>
               <div className="number number12">12</div>
-            </ClockFace>
-          </div>
-        </ClockContainer>
+          </ClockFace>
+        </div>
+      </ClockContainer>
     </>
   )
 
