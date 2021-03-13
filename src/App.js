@@ -1,13 +1,18 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './App.css'
-import Home from './screens/Home/Home.jsx'
 import Clock from './screens/Clock/Clock.jsx'
+import { setTime } from './services/time.js'
 
 const App = () => {
+  const { hour, setHour} = useState('')
+  const { minute, setMinute } = useState('')
+  const { second, setSecond } = useState('')
+
+  
+
   return (
     <>
-      {/* <Home /> */}
-      <Clock />
+      <Clock hourHand={hour} minuteHand={minute} secondHand={second}/>
    </>
   );
 }

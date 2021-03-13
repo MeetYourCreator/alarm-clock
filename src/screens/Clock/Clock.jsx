@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './Clock.css'
+import HourHand from '../../components/HourHand'
 
 const Clock = () => {
 
@@ -8,7 +9,8 @@ const Clock = () => {
       <div className="clock-container">
         <div className="clock">
           <div className="clock-face">
-            <div className="hand hour"></div>
+            {/* <div className="hand hour"></div> */}
+            <HourHand />
             <div className="hand minute"></div>
             <div className="hand second"></div>
             <div className="number number1">1</div>

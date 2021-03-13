@@ -65,6 +65,7 @@ body {
   border: 1px solid white;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  
 }
 
 .clock::after {
@@ -79,6 +80,7 @@ body {
   left: 50%;
   transform: skew(40deg, 20deg);
   border-radius: 10px;
+  
 }
 
 .clock .hand.second {
