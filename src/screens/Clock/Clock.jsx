@@ -1,17 +1,21 @@
 import React from 'react'
-import ClockNumber from '../../Components/ClockNumber.jsx'
+import ClockNumber from "../../Components/ClockNumber.jsx"
+import SecondHand from "../../Components/SecondHand.jsx"
+import MinuteHand from "../../Components/MinuteHand.jsx"
+import HourHand from "../../Components/HourHand.jsx"
+import {setTime} from '../../services/time.js'
 import './Clock.css'
 
-const Clock = ({hourHand, minuteHand, secondHand}) => {
+const Clock = ({}) => {
 
   return (
     <>
       <div className="clock-container">
         <div className="clock">
           <div className="clock-face">
-            <div className="hand hour">{hourHand}</div>
-            <div className="hand minute">{minuteHand}</div>
-            <div className="hand second">{secondHand}</div>
+            <div className="hand hour"><HourHand /></div>
+            <div className="hand minute"><MinuteHand /></div>
+            <div className="hand second"><SecondHand /></div>
             <div className="number number1"><ClockNumber number = '1'/></div>
             <div className="number number2"><ClockNumber number = '2' /></div>
             <div className="number number3"><ClockNumber number = '3' /></div>
