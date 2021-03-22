@@ -10,7 +10,7 @@ body {
   font-family: 'Wallpoet', cursive;
 }
 
-.clock .number {
+.number {
   font-size: 40px;
   color:rgb(123, 149, 5);
   --rotation: 0;
@@ -32,7 +32,7 @@ body {
 .clock .number9 { --rotation: 270deg; }
 .clock .number10 { --rotation: 300deg; }
 .clock .number11 { --rotation: 330deg; }
-
+/* 
 .clock .hand {
   --rotation: 0;
   position: absolute;
@@ -47,7 +47,7 @@ body {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   
-}
+} */
 
 .clock::after {
   content: '';
