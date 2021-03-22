@@ -3,7 +3,7 @@ import React from "react"
 const MinuteHand = ({minuteHand}) => {
   return (
     <>
-      {minuteHand}
+      <div style={{color: 'purple'}}>minutes:{minuteHand}</div>
     </>
   )
 }

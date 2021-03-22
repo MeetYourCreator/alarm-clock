@@ -30,12 +30,9 @@ export const setSecond = () => {
   const secondsRatio = currentDate.getSeconds() / 60;
   
   return secondsRatio
-
-  // setRotation(secondHand, secondsRatio)
-  // setRotation(secondHand, minutesRatio)
-  // setRoation(secondHand, hoursRatio)
+  
 }
 
-export const setRotation = (element, rotationRatio) => {
-  element.style.setProperty('--rotation', rotationRatio * 360)
-}
+// setRotation = (element, rotationRatio) => {
+//   element.style.setProperty('--rotation', rotationRatio * 360)
+// }

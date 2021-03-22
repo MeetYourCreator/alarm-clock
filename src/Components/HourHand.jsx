@@ -4,7 +4,7 @@ const HourHand = ({hourHand}) => {
   
   return (
     <>
-      {hourHand}
+      <div style={{ color: 'blue' }}>hours:{hourHand}</div>
     </>
   )
 }
