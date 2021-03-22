@@ -1,10 +1,10 @@
 import React from "react"
-import styled from 'styled-components'
+import {HoursStyled} from '../Styled/HoursStyled.js'
 
-const HourHand = () => {
+const HourHand = ({ name }) => {
   return (
     <>
-      <div className="hand hour"></div>
+      <HoursStyled>{name}</HoursStyled>
     </>
   )
 }

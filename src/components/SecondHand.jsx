@@ -1,11 +1,13 @@
 import React from 'react'
-import styled from 'styled-components'
+import { SecondsStyled } from '../Styled/SecondsStyled.js'
 
-const SecondHand = () => {
+const SecondHand = ({name}) => {
   
   return (
     <>
-      <div className="hand second"></div>
+      <SecondsStyled>
+        {name}
+      </SecondsStyled>
     </>
   )
 }
