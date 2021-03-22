@@ -3,7 +3,7 @@ import ClockNumber from "../../Components/ClockNumber.jsx"
 import SecondHand from "../../Components/SecondHand.jsx"
 import MinuteHand from "../../Components/MinuteHand.jsx"
 import HourHand from "../../Components/HourHand.jsx"
-import {setHour, setMinute, setSecond} from '../../services/time.js'
+import {setHour, setMinute, setSecond, angleClock} from '../../services/time.js'
 import './Clock.css'
 
 const Clock = () => {
@@ -26,7 +26,7 @@ const Clock = () => {
       <div className="clock-container">
         <div className="clock">
           <div className="clock-face">
-            <div className="hand hour"><HourHand hourHand={hourHand}/></div>
+            <div className="hand hour"><HourHand hourHand={hourHand }/></div>
             <div className="hand minute"><MinuteHand minuteHand={minuteHand}/></div>
             <div className="hand second"><SecondHand secondHand={secondHand}/></div>
             <div className="number number1"><ClockNumber number = '1'/></div>
