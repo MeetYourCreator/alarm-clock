@@ -7,7 +7,7 @@ const App = () => {
   return (
     <>
       {/* <Home /> */}
-      <Clock />
+      <Clock secondHand minuteHand hourHand/>
    </>
   );
 }

@@ -1,16 +1,16 @@
 import React from 'react'
 import './Clock.css'
 
-const Clock = () => {
+const Clock = ({hourHand, minuteHand, secondHand}) => {
 
   return (
     <>
       <div className="clock-container">
         <div className="clock">
           <div className="clock-face">
-            <div className="hand hour"></div>
-            <div className="hand minute"></div>
-            <div className="hand second"></div>
+            <div className="hand hour">{hourHand}</div>
+            <div className="hand minute">{minuteHand}</div>
+            <div className="hand second">{secondHand}</div>
             <div className="number number1">1</div>
             <div className="number number2">2</div>
             <div className="number number3">3</div>
