@@ -7,15 +7,15 @@ import {setHour, setMinute, setSecond, angleClock} from '../../services/time.js'
 import './Clock.css'
 
 const Clock = () => {
-  const [hourHand, setHourHand] = useState([])
-  const [minuteHand, setMinuteHand] = useState([])
-  const [secondHand, setSecondHand] = useState([])
+  const [hourRatio, setHourRatio] = useState(0)
+  const [minuteRatio, setMinuteRatio] = useState(0)
+  const [secondRatio, setSecondRatio] = useState(0)
   
   useEffect(() => {
     setTimeout(() => {
-      setHourHand(setHour())
-      setMinuteHand(setMinute())
-      setSecondHand(setSecond())
+      setHourRatio(setHour())
+      setMinuteRatio(setMinute())
+      setSecondRatio(setSecond())
   }, 1000)
   })
 
@@ -26,9 +26,9 @@ const Clock = () => {
       <div className="clock-container">
         <div className="clock">
           <div className="clock-face">
-            <div className="hand hour"><HourHand hourHand={hourHand }/></div>
-            <div className="hand minute"><MinuteHand minuteHand={minuteHand}/></div>
-            <div className="hand second"><SecondHand secondHand={secondHand}/></div>
+            <div className="hand hour"><HourHand hourHand={hourRatio }/></div>
+            <div className="hand minute"><MinuteHand minuteHand={minuteRatio}/></div>
+            <div className="hand second"><SecondHand secondHand={secondRatio}/></div>
             <div className="number number1"><ClockNumber number = '1'/></div>
             <div className="number number2"><ClockNumber number = '2' /></div>
             <div className="number number3"><ClockNumber number = '3' /></div>

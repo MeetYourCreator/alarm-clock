@@ -4,9 +4,11 @@ const secondHand = document.querySelector('[data-second-hand]')
 
 export const setHour = () => {
   const date = new Date();
-  const hours = date.getHours();
+  const secondRatio = date.getSeconds() / 60;
+  const minuteRatio = (secondRatio + date.getMinutes()) / 60;
+  const hourRatio = (minuteRatio + date.getHours()) / 12;
 
-  return hours
+  return hourRatio
   // setRotation(secondHand, secondsRatio)
   // setRotation(secondHand, minutesRatio)
   // setRoation(secondHand, hoursRatio)
@@ -14,9 +16,10 @@ export const setHour = () => {
 
 export const setMinute = () => {
   const date = new Date();
-  const minutes = date.getMinutes()
+  const secondRatio = date.getSeconds() / 60;
+  const minuteRatio = (secondRatio + date.getMinutes()) / 60;
   
-  return minutes
+  return minuteRatio
   // setRotation(secondHand, secondsRatio)
   // setRotation(secondHand, minutesRatio)
   // setRoation(secondHand, hoursRatio)
@@ -24,9 +27,9 @@ export const setMinute = () => {
 
 export const setSecond = () => {
   const date = new Date();
-  const seconds = date.getSeconds();
+  const secondRatio = date.getSeconds() /60;
   
-  return seconds
+  return secondRatio
   
 }
 
