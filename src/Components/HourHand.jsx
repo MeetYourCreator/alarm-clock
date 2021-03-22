@@ -1,7 +1,12 @@
 import React from "react"
 
-const HourHand = () => {
-  return <></>
+const HourHand = ({hourHand}) => {
+  
+  return (
+    <>
+      {hourHand}
+    </>
+  )
 }
 
 export default HourHand;

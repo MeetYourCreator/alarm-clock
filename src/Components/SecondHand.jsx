@@ -1,10 +1,11 @@
 import React from 'react'
 
-const SecondHand = () => {
+const SecondHand = ({secondHand}) => {
   
   return (
-  <>
-  </>
+    <>
+      <div>{secondHand}</div>
+    </>
   )
 }
 
