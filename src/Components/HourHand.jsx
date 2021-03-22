@@ -1,10 +1,10 @@
 import React from "react"
 
-const HourHand = ({hourHand}) => {
+const HourHand = () => {
   
   return (
     <>
-      <div style={{ color: 'blue' }}>hours:{hourHand}</div>
+      <div style={{ color: 'blue' }}></div>
     </>
   )
 }

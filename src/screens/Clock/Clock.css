@@ -13,7 +13,7 @@ body {
   
 }
 
-.clock-container {
+.clock-edge {
   background-color:rgba(255, 0, 85, 0.485);
   border-top-right-radius: 250px;
   border-bottom-right-radius: 250px;

@@ -4,7 +4,7 @@ const SecondHand = ({secondHand}) => {
   
   return (
     <>
-      <div style={{color:'darkgreen'}}>seconds:{secondHand}</div>
+      <div style={{color:'darkgreen'}}></div>
     </>
   )
 }

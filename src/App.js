@@ -8,7 +8,7 @@ const App = () => {
   return (
     <>
       {/* <Home /> */}
-      <Clock secondHand minuteHand hourHand clockNumber='1'/>
+      <Clock />
    </>
   );
 }

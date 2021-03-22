@@ -3,7 +3,7 @@ import ClockNumber from "../../Components/ClockNumber.jsx"
 import SecondHand from "../../Components/SecondHand.jsx"
 import MinuteHand from "../../Components/MinuteHand.jsx"
 import HourHand from "../../Components/HourHand.jsx"
-import {setHour, setMinute, setSecond, angleClock} from '../../services/time.js'
+import {setHour, setMinute, setSecond } from '../../services/time.js'
 import './Clock.css'
 
 const Clock = () => {
@@ -12,35 +12,80 @@ const Clock = () => {
   const [secondRatio, setSecondRatio] = useState(0)
   
   useEffect(() => {
-    setTimeout(() => {
+    setInterval(() => {
       setHourRatio(setHour())
       setMinuteRatio(setMinute())
       setSecondRatio(setSecond())
   }, 1000)
-  })
+  }, [])
 
   
 
   return (
     <>
-      <div className="clock-container">
+      <div className="clock-edge">
         <div className="clock">
           <div className="clock-face">
-            <div className="hand hour"><HourHand hourHand={hourRatio }/></div>
-            <div className="hand minute"><MinuteHand minuteHand={minuteRatio}/></div>
-            <div className="hand second"><SecondHand secondHand={secondRatio}/></div>
-            <div className="number number1"><ClockNumber number = '1'/></div>
-            <div className="number number2"><ClockNumber number = '2' /></div>
-            <div className="number number3"><ClockNumber number = '3' /></div>
-            <div className="number number4"><ClockNumber number = '4' /></div>
-            <div className="number number5"><ClockNumber number = '5' /></div>
-            <div className="number number6"><ClockNumber number = '6' /></div>
-            <div className="number number7"><ClockNumber number = '7' /></div>
-            <div className="number number8"><ClockNumber number = '8' /></div>
-            <div className="number number9"><ClockNumber number = '9' /></div>
-            <div className="number number10"><ClockNumber number = '10' /></div>
-            <div className="number number11"><ClockNumber number = '11' /></div>
-            <div className="number number12"><ClockNumber number = '12' /></div>
+            <div
+              className="hand hour"
+              style={{
+                transform: `translate(-50%) rotate(${hourRatio * 360}deg)`,
+              }}
+            >
+              {/* <HourHand/> */}
+            </div>
+            <div
+              className="hand minute"
+              style={{
+                transform: `translate(-50%) rotate(${minuteRatio * 360}deg)`,
+              }}
+            >
+              {/* <MinuteHand/> */}
+            </div>
+            <div
+              className="hand second"
+              style={{
+                transform: `translate(-50%) rotate(${secondRatio * 360}deg)`,
+              }}
+            >
+              {/* <SecondHand /> */}
+            </div>
+            <div className="number number1">
+              1
+            </div>
+            <div className="number number2">
+              2
+            </div>
+            <div className="number number3">
+              3
+            </div>
+            <div className="number number4">
+              4
+            </div>
+            <div className="number number5">
+              5
+            </div>
+            <div className="number number6">
+              6
+            </div>
+            <div className="number number7">
+              7
+            </div>
+            <div className="number number8">
+              8
+            </div>
+            <div className="number number9">
+              9
+            </div>
+            <div className="number number10">
+              10
+            </div>
+            <div className="number number11">
+              <ClockNumber number="11" />
+            </div>
+            <div className="number number12">
+              <ClockNumber number="12" />
+            </div>
           </div>
         </div>
       </div>
