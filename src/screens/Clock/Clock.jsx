@@ -81,10 +81,10 @@ const Clock = () => {
               10
             </div>
             <div className="number number11">
-              <ClockNumber number="11" />
+              11
             </div>
             <div className="number number12">
-              <ClockNumber number="12" />
+              12
             </div>
           </div>
         </div>
