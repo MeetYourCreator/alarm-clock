@@ -25,7 +25,7 @@ body {
 .clock-face {
   width: 500px;
   height: 500px;
-  background-color: rgba(102, 193, 230, 0.485);
+  background-color: #66c1e67c;
   border-radius: 50%;
   border: 3px solid white;
   box-shadow:  -8px 8px 15px rgba(225,225,225,0.05),
@@ -45,7 +45,7 @@ body {
   z-index: 11;
   width: 20px;
   height: 20px;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   border-radius: 50%;
